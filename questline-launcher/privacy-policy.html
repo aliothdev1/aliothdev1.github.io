@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1326">
+  <meta name="description" content="Chính sách quyền riêng tư và điều khoản sử dụng của Questline Launcher cho Android. Questline Launcher Privacy Policy and Terms of Use.">
+  <title>Privacy Policy &amp; Terms of Use | Questline Launcher</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0b1326;
+      --sunken: #111a2c;
+      --surface: #151d31;
+      --inset: #1f2840;
+      --line: #3a4466;
+      --text: #dae2fd;
+      --muted: #a3acc8;
+      --cream: #ffe1a7;
+      --gold: #fbbf24;
+      --blue: #7bd0ff;
+      --display: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-padding-block: 1rem; }
+    body {
+      margin: 0;
+      background-color: var(--background);
+      background-image: radial-gradient(#273049 1px, transparent 1px);
+      background-size: 16px 16px;
+      color: var(--text);
+      font: 1rem/1.68 system-ui, sans-serif;
+    }
+
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    a { color: var(--blue); text-underline-offset: .2em; }
+    a:hover { color: var(--cream); }
+    a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+    [id]:target { scroll-margin-block: .5rem; }
+    section[id]:target > h2 { text-decoration: underline; text-underline-offset: .22em; }
+    .shell { width: min(70rem, calc(100% - 2rem)); margin-inline: auto; }
+
+    .masthead {
+      background: var(--sunken);
+      border-bottom: 1px solid var(--line);
+    }
+    .masthead .shell, .footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .65rem 1rem;
+      padding-block: .8rem;
+    }
+    .brand, .languages, .index, .stamp {
+      font: 700 .875rem/1.35 var(--display);
+    }
+    .brand { color: var(--cream); text-transform: uppercase; letter-spacing: .12em; }
+    .brand::before {
+      content: "";
+      display: inline-block;
+      width: .65rem;
+      height: .65rem;
+      margin-inline-end: .7rem;
+      background: var(--gold);
+      box-shadow: 2px 2px 0 #6c4f00;
+    }
+    .languages { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .languages button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: .35rem .7rem;
+      border: 1px solid var(--line);
+      background: var(--inset);
+      color: var(--blue);
+      font: inherit;
+      cursor: pointer;
+      box-shadow: inset 0 -2px 0 #0b1326;
+    }
+    .languages button:hover { color: var(--cream); }
+    .languages button:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+    .languages button[aria-pressed="true"] { color: var(--background); background: var(--gold); border-color: var(--gold); }
+    html:not([data-lang="vi"]) [data-l="vi"], html[data-lang="vi"] [data-l="en"] { display: none !important; }
+
+    main { padding-block: clamp(1.35rem, 4.5vw, 3rem); }
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(1rem, 4vw, 3rem);
+      isolation: isolate;
+      padding: clamp(1.2rem, 5vw, 3.25rem);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--gold);
+      background: linear-gradient(118deg, var(--surface) 55%, #1f2840);
+      box-shadow: 4px 4px 0 #060e20;
+    }
+    .hero h1 {
+      max-width: 19ch;
+      color: var(--cream);
+      font: 800 clamp(1.8rem, 5vw, 3.45rem)/1.12 var(--display);
+      letter-spacing: -.045em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    .hero p { margin-top: .6rem; }
+    .stamp { color: var(--muted); }
+    .hero .stamp { margin-top: 1.05rem; }
+    .crest {
+      position: relative;
+      display: grid;
+      width: clamp(5rem, 14vw, 9rem);
+      aspect-ratio: 1;
+      place-items: center;
+      background: var(--sunken);
+      border: 1px solid var(--line);
+      box-shadow: inset 0 0 0 4px var(--inset), 4px 4px 0 #060e20;
+    }
+    .crest::before {
+      content: "";
+      width: 65%;
+      aspect-ratio: 1;
+      background: var(--gold);
+      clip-path: polygon(32% 5%, 68% 5%, 68% 12%, 89% 12%, 89% 20%, 96% 20%, 96% 49%, 88% 49%, 88% 65%, 80% 65%, 80% 76%, 65% 76%, 65% 87%, 56% 87%, 56% 96%, 44% 96%, 44% 87%, 35% 87%, 35% 76%, 20% 76%, 20% 65%, 12% 65%, 12% 49%, 4% 49%, 4% 20%, 11% 20%, 11% 12%, 32% 12%);
+    }
+    .crest::after {
+      content: "";
+      position: absolute;
+      width: 32%;
+      aspect-ratio: 1;
+      background: var(--sunken);
+      clip-path: polygon(24% 4%, 76% 4%, 76% 42%, 88% 42%, 88% 96%, 12% 96%, 12% 42%, 24% 42%, 24% 21%, 39% 21%, 39% 42%, 61% 42%, 61% 21%, 24% 21%);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 14rem minmax(0, 1fr);
+      gap: clamp(1rem, 3vw, 2rem);
+      align-items: start;
+      margin-top: clamp(1rem, 3vw, 2rem);
+    }
+    .index, .document {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: 3px 3px 0 #060e20;
+    }
+    .index { position: sticky; top: 1rem; }
+    .index h2 {
+      padding: .85rem;
+      color: var(--cream);
+      background: var(--inset);
+      font: inherit;
+    }
+    .index ul { margin: 0; padding: .35rem .65rem; list-style: none; }
+    .index ul + ul { border-top: 1px solid var(--line); }
+    .index a {
+      display: flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: .3rem .2rem;
+    }
+    .documents { min-width: 0; }
+    .document + .document { margin-top: 1.6rem; }
+    .document > header, .document > section { padding: clamp(1rem, 3vw, 1.8rem); }
+    .document > header {
+      background: var(--inset);
+      border-top: 3px solid var(--blue);
+      color: var(--blue);
+    }
+    .document h2 {
+      color: var(--cream);
+      font: 750 clamp(1.28rem, 3vw, 1.85rem)/1.25 var(--display);
+      text-wrap: balance;
+    }
+    .document > header h2 { color: inherit; }
+    .document > section + section { border-top: 1px solid var(--line); }
+    .document h3 {
+      color: var(--text);
+      font: 700 1.05rem/1.45 var(--display);
+    }
+    .document h3, .document p + p, .document dl, .document section > p { margin-top: .7rem; }
+    .document :is(h2, h3) + p { margin-top: .4rem; }
+    .data-list > div { padding: .6rem 0 .6rem .8rem; border-left: 2px solid var(--line); }
+    .data-list dt { color: var(--cream); font-weight: 700; }
+    .data-list dd { margin-top: .15rem; }
+    .footer { border-top: 1px solid var(--line); color: var(--muted); }
+    .document a { overflow-wrap: anywhere; }
+
+    @media (max-width: 47rem) {
+      .layout { grid-template-columns: minmax(0, 1fr); }
+      .index { position: static; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .index h2 { grid-column: 1 / -1; }
+      .index ul + ul { border-top: 0; border-left: 1px solid var(--line); }
+    }
+    @media (max-width: 29rem) {
+      .hero { display: block; }
+      .crest { display: none; }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      body, .hero, .document, .document > header { background: white; color: black; }
+      .masthead, .crest, .index, .footer { display: none; }
+      .shell { width: 100%; }
+      main, .hero, .document > header, .document > section { padding: .5rem 0; }
+      .layout { display: block; }
+      .hero, .document, .document > header { border: 0; box-shadow: none; }
+      .hero h1, .document h2, .document h3, .data-list dt, .stamp, a { color: black; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="masthead">
+    <div class="shell">
+      <p class="brand">Questline Launcher</p>
+      <nav class="languages" aria-label="Language / Ngôn ngữ">
+        <button type="button" data-set-lang="en" lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="vi" lang="vi" aria-pressed="false">Tiếng Việt</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <h1 data-l="vi" lang="vi">Chính sách quyền riêng tư &amp; Điều khoản</h1>
+        <h1 data-l="en" lang="en">Privacy Policy &amp; Terms of Use</h1>
+        <p class="stamp"><span data-l="vi" lang="vi">Cập nhật</span><span data-l="en" lang="en">Last updated</span> <time datetime="2026-11-22">2026-11-22</time></p>
+      </div>
+      <div class="crest" aria-hidden="true"></div>
+    </header>
+
+    <div class="layout">
+      <nav class="index" aria-label="Contents / Mục lục">
+        <h2><span data-l="vi" lang="vi">Mục lục</span><span data-l="en" lang="en">Contents</span></h2>
+        <ul data-l="vi" lang="vi">
+          <li><a href="#privacy-vi">Quyền riêng tư</a></li>
+          <li><a href="#terms-vi">Điều khoản</a></li>
+          <li><a href="#contact-vi">Liên hệ</a></li>
+        </ul>
+        <ul data-l="en" lang="en">
+          <li><a href="#privacy-en">Privacy Policy</a></li>
+          <li><a href="#terms-en">Terms of Use</a></li>
+          <li><a href="#contact-en">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="documents">
+        <article class="document" id="vi" lang="vi" data-l="vi" aria-labelledby="title-vi">
+          <header><h2 id="title-vi">Tiếng Việt</h2></header>
+
+          <section id="privacy-vi">
+            <h2>Chính sách quyền riêng tư</h2>
+            <p>Chính sách này áp dụng cho Questline Launcher trên Android (gói <b>com.alioth.questline</b>) và trang này. Questline Launcher hoạt động không cần tài khoản riêng. Phiên bản hiện tại không tích hợp SDK quảng cáo, phân tích hành vi hoặc báo cáo lỗi từ xa.</p>
+
+            <h3>Dữ liệu xử lý trên thiết bị</h3>
+            <dl class="data-list">
+              <div>
+                <dt>Ứng dụng, lối tắt và widget</dt>
+                <dd>Questline Launcher đọc tên, biểu tượng, mã gói và lối tắt mà Android cung cấp để hiển thị và mở ứng dụng, sắp xếp Grimoire và Quick battle, nhận diện bộ biểu tượng và đặt widget bạn chọn. Widget có thể hiển thị nội dung do ứng dụng cung cấp widget quản lý.</dd>
+              </div>
+              <div>
+                <dt>Mức sử dụng và trạng thái thiết bị</dt>
+                <dd>Khi bạn cấp quyền Truy cập mức sử dụng, Questline Launcher đọc lịch sử mở ứng dụng và thời điểm màn hình hoạt động để tính thời lượng sử dụng, cập nhật nhiệm vụ và giới hạn ứng dụng, và ước tính thời gian nghỉ để tính thưởng trong game. Ứng dụng cũng đọc mức pin, trạng thái sạc, dung lượng bộ nhớ và bộ nhớ lưu trữ, cùng thời điểm báo thức kế tiếp để hiển thị trạng thái thiết bị.</dd>
+              </div>
+              <div>
+                <dt>Danh bạ và lịch</dt>
+                <dd>Khi bạn cấp quyền tương ứng, Questline Launcher đọc tên và số điện thoại để hiển thị danh bạ, và đọc tiêu đề, thời gian, trạng thái cả ngày và địa điểm của sự kiện để hiển thị lịch. Khi bạn chọn gọi, nhắn tin hoặc mở một sự kiện, Android chuyển số điện thoại hoặc mã sự kiện cần thiết cho ứng dụng xử lý thao tác đó.</dd>
+              </div>
+              <div>
+                <dt>Thông báo và nội dung đang phát</dt>
+                <dd>Khi bạn bật quyền Truy cập thông báo, Questline Launcher có thể đọc ứng dụng gửi, thời điểm, tiêu đề và nội dung thông báo mà Android cung cấp, kể cả nội dung thư hoặc tin nhắn xuất hiện trong thông báo. Dữ liệu này được giữ trong bộ nhớ để hiển thị thông báo và chỉ báo thư, tin nhắn. Ứng dụng cũng dùng thông tin phiên phát, như tên bài, nghệ sĩ và trạng thái phát, để hiển thị và điều khiển nội dung đang phát.</dd>
+              </div>
+              <div>
+                <dt>Hồ sơ và tiến trình</dt>
+                <dd>Tên và ảnh đại diện bạn chọn, cài đặt, bố cục, nguồn tin, nhiệm vụ, lịch sử nhiệm vụ, thành tựu, pet và tiến trình được lưu cục bộ để duy trì hồ sơ và tính năng. Android có thể cho phép ứng dụng gửi nhắc việc, lên lịch báo thức, lập lại lịch sau khi khởi động và thay đổi chế độ Không làm phiền khi bạn bật tính năng tương ứng.</dd>
+              </div>
+            </dl>
+
+            <h3>Kết nối mạng và bên nhận dữ liệu</h3>
+            <p>Herald tải nguồn RSS và hình ảnh bài viết trực tiếp từ máy chủ của nhà cung cấp nguồn tin hoặc hình ảnh. Các máy chủ này và máy chủ chuyển hướng có thể nhận địa chỉ IP, URL được yêu cầu và thông tin kỹ thuật của yêu cầu. Khi mở bài viết hoặc dùng widget, dịch vụ bên ngoài có thể xử lý dữ liệu theo chính sách riêng. Questline Launcher không gửi danh bạ, sự kiện lịch, nội dung thông báo hay lịch sử sử dụng tới nguồn RSS.</p>
+            <p>Nếu bạn gửi email hỗ trợ, nhà phát triển và các dịch vụ email xử lý địa chỉ gửi, nội dung và tệp đính kèm bạn cung cấp. Khi có giao dịch qua Google Play, Google xử lý thanh toán theo chính sách của Google. Questline Launcher không bán dữ liệu cá nhân hay dùng dữ liệu từ các quyền Android để quảng cáo.</p>
+            <p>Trang này không đặt cookie hay nhúng công cụ theo dõi. GitHub Pages ghi và lưu địa chỉ IP của khách truy cập vì mục đích bảo mật. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Chính sách quyền riêng tư của GitHub</a></p>
+
+            <h3>Sao lưu và bảo vệ dữ liệu</h3>
+            <p>Android giới hạn quyền truy cập vào vùng lưu trữ riêng của Questline Launcher. Ứng dụng tắt tính năng Auto Backup của Android. Tệp sao lưu bạn tạo có thể chứa cài đặt, ảnh đại diện, nguồn RSS, nhiệm vụ, tiến trình chơi và bố cục bảng cáo thị. Bố cục ghi lại widget nào đã được đặt trên bảng. Nội dung và cài đặt của từng widget do ứng dụng cung cấp widget đó quản lý. Dữ liệu sao lưu được mã hóa. Phần đầu tệp có thể đọc được và không chứa mã đơn hàng hay thông tin cá nhân. Khôi phục bản sao lưu không chuyển quyền Pro. Quyền Pro gắn với giao dịch mua trên Google Play của thiết bị. Bạn chọn nơi lưu tệp, kể cả dịch vụ đám mây.</p>
+
+            <h3>Thời gian lưu giữ và cách xóa</h3>
+            <p>Dữ liệu lưu cục bộ được giữ theo tính năng cho đến khi được thay thế, bị xóa trong ứng dụng hoặc bạn xóa dữ liệu ứng dụng. Bạn có thể thu hồi quyền trong Cài đặt Android để ngừng truy cập về sau. Để xóa dữ liệu cục bộ của Questline Launcher, hãy vào <b>Cài đặt → Ứng dụng → Questline Launcher → Bộ nhớ → Xóa dữ liệu</b> hoặc gỡ cài đặt. Hãy xóa riêng các bản sao lưu ở nơi bạn đã lưu chúng.</p>
+            <p>Thông tin bạn gửi qua email được giữ trong thời gian cần thiết để xử lý yêu cầu và đáp ứng nghĩa vụ pháp lý nếu có. Bạn có thể dùng thông tin liên hệ bên dưới để hỏi về quyền riêng tư hoặc yêu cầu truy cập, chỉnh sửa hay xóa dữ liệu đã gửi.</p>
+          </section>
+
+          <section id="terms-vi">
+            <h2>Điều khoản sử dụng</h2>
+            <h3>Sử dụng Questline Launcher</h3>
+            <p>Bạn được sử dụng ứng dụng cho mục đích cá nhân, hợp pháp. Bạn có thể đổi màn hình chính mặc định và quản lý các quyền tùy chọn trong Cài đặt Android. Khi thêm ảnh, nguồn tin hoặc nội dung khác, bạn chịu trách nhiệm về quyền sử dụng nội dung đó.</p>
+            <h3>Tiến trình và Questline Launcher Pro</h3>
+            <p>Vàng, kinh nghiệm, vật phẩm và pet là phần thưởng ảo chỉ dùng trong Questline Launcher. Nếu gói Pro trả phí được cung cấp, hãy xem giá, thời hạn và điều kiện trên màn hình mua. Giao dịch qua Google Play tuân theo điều khoản thanh toán của Google Play và quyền của bạn theo pháp luật. Bản sao lưu có thể ghi đè dữ liệu hiện tại khi khôi phục.</p>
+            <h3>Dịch vụ bên ngoài và thay đổi</h3>
+            <p>Ứng dụng bên thứ ba, widget, nguồn RSS và website liên kết chịu điều khoản của nhà cung cấp tương ứng. Khả năng hoạt động của một số tính năng phụ thuộc vào thiết bị, phiên bản Android và quyền đã cấp. Chính sách và điều khoản có thể được cập nhật trên trang này. Các quyền bắt buộc theo pháp luật áp dụng vẫn được bảo lưu.</p>
+          </section>
+
+          <section id="contact-vi">
+            <h2>Liên hệ</h2>
+            <p>Nhà phát triển Questline Launcher tiếp nhận câu hỏi về quyền riêng tư, yêu cầu liên quan đến dữ liệu và hỗ trợ tại <a href="mailto:cr.alioth.dev@gmail.com">cr.alioth.dev@gmail.com</a>.</p>
+          </section>
+        </article>
+
+        <article class="document" id="en" lang="en" data-l="en" aria-labelledby="title-en">
+          <header><h2 id="title-en">English</h2></header>
+
+          <section id="privacy-en">
+            <h2>Privacy Policy</h2>
+            <p>This policy applies to Questline Launcher for Android (package <b>com.alioth.questline</b>) and this page. Questline Launcher works without its own user account. The current version contains no advertising, behavioral analytics, or remote crash reporting SDK.</p>
+
+            <h3>Data processed on your device</h3>
+            <dl class="data-list">
+              <div>
+                <dt>Apps, shortcuts, and widgets</dt>
+                <dd>Questline Launcher reads app names, icons, package identifiers, and shortcuts provided by Android to display and launch apps, organize Grimoire and Quick battle, find icon packs, and place widgets you choose. Widgets may show content managed by the app that provides them.</dd>
+              </div>
+              <div>
+                <dt>App usage and device status</dt>
+                <dd>With Usage access, Questline Launcher reads app activity and screen activity times to calculate usage duration, update quests and app usage limits, and estimate periods of rest for in-game rewards. It also reads battery level, charging status, memory and storage usage, and the next alarm time to display device status.</dd>
+              </div>
+              <div>
+                <dt>Contacts and calendar</dt>
+                <dd>With the relevant permission, Questline Launcher reads names and phone numbers to show your contacts, and event titles, times, all-day status, and locations to show your calendar. When you choose to call, text, or open a calendar event, Android passes the phone number or event identifier to the app that handles the action.</dd>
+              </div>
+              <div>
+                <dt>Notifications and playback</dt>
+                <dd>With Notification access, Questline Launcher may read the originating app, time, title, and text provided by Android, including email or message content shown in notifications. This information is held in memory to display notifications and mail and message indicators. The launcher also uses media session information such as track title, artist, and playback status to display and control playback.</dd>
+              </div>
+              <div>
+                <dt>Profile and progress</dt>
+                <dd>Your chosen name and avatar, settings, layout, feed sources, quests, quest history, achievements, pets, and progress are stored locally to maintain your profile and app features. Android may let Questline Launcher send reminders, schedule alarms, reschedule after reboot, and change Do Not Disturb when you enable the relevant features.</dd>
+              </div>
+            </dl>
+
+            <h3>Network requests and recipients</h3>
+            <p>Herald downloads RSS feeds and article images directly from feed or image providers. Those servers and any redirect servers may receive your IP address, requested URL, and technical request information. When you open an article or use a widget, external services may process data under their own policies. Questline Launcher does not send contacts, calendar events, notification content, or usage history to RSS providers.</p>
+            <p>If you email support, the developer and email service providers process the sender address, message, and attachments you provide. When a purchase is made through Google Play, Google handles payment under its own policies. Questline Launcher does not sell personal data or use data obtained through Android permissions for advertising.</p>
+            <p>This page sets no cookies and embeds no trackers. GitHub Pages logs and stores visitor IP addresses for security purposes. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></p>
+
+            <h3>Backups and security</h3>
+            <p>Android restricts access to Questline Launcher's private app storage. The app disables Android Auto Backup. A backup you create can contain settings, your avatar, RSS sources, quests, gameplay progress and the notice board layout. The layout records which widgets are on the board. Each widget provider manages its own content and settings. The file payload is encrypted. The readable header contains no order IDs or personal data. Restoring a backup never transfers Pro. Pro is tied to the Google Play purchase on the device. You choose where to store the file, including any cloud provider you select.</p>
+
+            <h3>Retention and deletion</h3>
+            <p>Local data is kept as needed for each feature until it is replaced, deleted in the app, or cleared with the app's storage. You can revoke permissions in Android Settings to stop future access. To erase Questline Launcher's local data, use <b>Settings → Apps → Questline Launcher → Storage → Clear storage</b> or uninstall the app. Delete exported backup copies separately from the locations where you saved them.</p>
+            <p>Information you email is kept for as long as needed to handle your request and meet any applicable legal obligations. Use the contact details below to ask a privacy question or request access, correction, or deletion of data you sent.</p>
+          </section>
+
+          <section id="terms-en">
+            <h2>Terms of Use</h2>
+            <h3>Using Questline Launcher</h3>
+            <p>You may use the app for personal, lawful purposes. You can change your default home app and manage optional permissions in Android Settings. When you add images, feeds, or other material, you are responsible for having the right to use it.</p>
+            <h3>Progress and Questline Launcher Pro</h3>
+            <p>Gold, experience, items, and pets are virtual rewards for use within Questline Launcher. If a paid Pro plan is offered, consult the purchase screen for its price, duration, and conditions. Google Play purchases are subject to Google Play's payment terms and your rights under applicable law. Restoring a backup can overwrite existing data.</p>
+            <h3>Third-party services and changes</h3>
+            <p>Third-party apps, widgets, RSS feeds, and linked websites are subject to their providers' terms. Some features depend on your device, Android version, and permissions. This policy and these terms may be updated on this page. Your mandatory rights under applicable law are preserved.</p>
+          </section>
+
+          <section id="contact-en">
+            <h2>Contact</h2>
+            <p>Contact the Questline Launcher developer about privacy, data requests, or support at <a href="mailto:cr.alioth.dev@gmail.com">cr.alioth.dev@gmail.com</a>.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="shell footer">
+    <p class="brand">Questline Launcher</p>
+    <a href="#top"><span data-l="vi" lang="vi">Về đầu trang</span><span data-l="en" lang="en">Back to top</span></a>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var buttons = document.querySelectorAll("[data-set-lang]");
+      function setLang(lang, save) {
+        if (lang !== "vi") lang = "en";
+        root.setAttribute("data-lang", lang);
+        root.setAttribute("lang", lang);
+        buttons.forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
+        });
+        if (save) { try { localStorage.setItem("lang", lang); } catch (e) {} }
+      }
+      var initial = "en";
+      var q = /[?&]lang=(vi|en)\b/.exec(location.search);
+      if (q) initial = q[1];
+      else if (/^#(?:.+-)?vi$/.test(location.hash)) initial = "vi";
+      else { try { initial = localStorage.getItem("lang") || "en"; } catch (e) {} }
+      setLang(initial, false);
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang"), true); });
+      });
+    })();
+  </script>
+</body>
+</html>
